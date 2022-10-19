@@ -1,0 +1,99 @@
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">Rainbow Survey Form</h1>
+    <p id="description" class="description text-center">
+      Thank you for taking the time to let us learn about the perception of rainbow.
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+    </div>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="country-label" for="country">Country</label>
+        <input type="text" name="Country" id="country" class="form-control" placeholder="Enter your country" required />
+      </div>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="city-label" for="city">City</label>
+          <input type="text" name="City" id="city" class="form-control" placeholder="Enter your city" required />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+
+          <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+          <input type="number" name="age" id="number" min="10" max="100" class="form-control" placeholder="Age" />
+        </div>
+        <div class="form-group">
+          <p>Which option best describes your current condition?</p>
+          <select id="dropdown" name="condition" class="form-control" required>
+            <option disabled selected value>Select current condition</option>
+            <option value="sighted">Sighted</option>
+            <option value="color-blind">Color-blind</option>
+            <option value="preferNo">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Have you seen a rainbow in your city in the last 6 months?</p>
+          <label>
+            <input name="user-recommend" value="yes" type="radio" class="input-radio" checked />Yes</label>
+
+          <label>
+            <input name="user-recommend" value="no" type="radio" class="input-radio" />No</label>
+
+          <div class="form-group">
+            <p>
+              What is your favorite color of rainbow?
+            </p>
+            <select id="most-like" name="mostLike" class="form-control" required>
+              <option disabled selected value>Select an option</option>
+              <option value="red">Red</option>
+              <option value="orange">Orange</option>
+              <option value="yellow">Yellow</option>
+              <option value="green">Green</option>
+              <option value="purple">Purple</option>
+              <option value="pink">Pink</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <p>
+              Which color would you like to see added?
+              <span class="clue">(Check all that apply)</span>
+            </p>
+
+            <label>
+              <input name="prefer" value="baby-blue" type="checkbox" class="input-checkbox" />Baby blue</label>
+            <label>
+              <input name="prefer" value="baby-pink" type="checkbox" class="input-checkbox" />Baby pink</label>
+
+            <label>
+              <input name="prefer" value="brown" type="checkbox" class="input-checkbox" />Brown</label>
+
+            <label>
+              <input name="prefer" value="gold" type="checkbox" class="input-checkbox" />Gold</label>
+
+            <label>
+              <input name="prefer" value="lavender-grey" type="checkbox" class="input-checkbox" />Lavender grey</label>
+
+          </div>
+
+          <div class="form-group">
+            <p>Any comments or suggestions?</p>
+            <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+          </div>
+
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+              Submit
+            </button>
+          </div>
+      </form>
+</div>
